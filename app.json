@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/home/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "NeteaseCloudMusic - WeChat Demo",
+    "navigationBarTextStyle":"black"
+  }
+}

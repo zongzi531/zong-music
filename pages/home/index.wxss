@@ -1,0 +1,54 @@
+.album-pic {
+  display: block;
+  margin: 40rpx auto;
+  width: 640rpx;
+  height: 640rpx;
+}
+.music-slider {
+  margin: 0 40rpx;
+}
+.music-control {
+  display: flex;
+  margin: 80rpx 40rpx 0;
+}
+.music-control-item {
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+}
+.time {
+  display: flex;
+  margin: 0 40rpx;
+  font-size: 24rpx;
+}
+.currentTime,
+.duration {
+  flex: 1;
+}
+.currentTime {
+  text-align: left;
+}
+.duration {
+  text-align: right;
+}
+.info {
+  font-size: 32rpx;
+}
+.name {
+  display: block;
+  line-height: 60rpx;
+  text-align: center;
+  font-weight: 700;
+}
+.des {
+  display: block;
+  font-size: 28rpx;
+  text-align: center;
+}
+/* weui-slider */
+.wx-slider-handle {
+  width: 28rpx !important;
+  height: 28rpx !important;
+  margin-left: -14rpx !important;
+  margin-top: -14rpx !important;
+}

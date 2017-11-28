@@ -1,0 +1,34 @@
+<audio
+  src="{{url}}"
+  id="music"
+  bindtimeupdate="timeupdate"
+  bindended="ended">
+</audio>
+
+<image class="album-pic" src="{{blurPicUrl}}" mode="aspectFill"></image>
+
+<view class="music-slider">
+  <slider activeColor="#999" min="0" value="{{currentTime}}" max="{{duration}}" bindchange="sliderChange"/>
+  <view class="time">
+    <text class="currentTime">{{currentTimeText}}</text>
+    <text class="duration">{{durationText}}</text>
+  </view>
+</view>
+
+<view class="info">
+  <text class="name">{{name}}</text>
+  <text class="des">{{artists}} - {{albumName}}</text>
+</view>
+
+<view class="music-control">
+  <view class="music-control-item">
+    <text bindtap="previousPlay">上一首</text>
+  </view>
+  <view class="music-control-item">
+    <text wx:if="{{!playControl}}" bindtap="play">播放</text>
+    <text wx:if="{{playControl}}" bindtap="pause">暂停</text>
+  </view>
+  <view class="music-control-item">
+    <text bindtap="nextPlay">下一首</text>
+  </view>
+</view>
